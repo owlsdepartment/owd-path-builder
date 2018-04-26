@@ -55,9 +55,11 @@ This package is experimental and was made primarily to be used in our team's int
 
 ## Author
 
-Jakub Przyborowski <kuba@owlsdepartment.com> 
-http://github.com/przyb
-http://www.owlsdepartment.com/
+Jakub Przyborowski, Owls Department
+* <kuba@owlsdepartment.com> 
+* http://github.com/przyb
+* http://github.com/owlsdepartment
+* http://www.owlsdepartment.com/
 
 ## License
 

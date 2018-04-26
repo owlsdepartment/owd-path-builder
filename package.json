@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/przyb/owd-path-builder.git"
+    "url": "git+https://github.com/owlsdepartment/owd-path-builder.git"
   },
   "keywords": [
     "svg",
@@ -21,9 +21,9 @@
   "author": "Jakub Przyborowski",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/przyb/owd-path-builder/issues"
+    "url": "https://github.com/owlsdepartment/owd-path-builder/issues"
   },
-  "homepage": "https://github.com/przyb/owd-path-builder#readme",
+  "homepage": "https://github.com/owlsdepartment/owd-path-builder#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
