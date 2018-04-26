@@ -1,6 +1,6 @@
 {
   "name": "owd-path-builder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a tool to build svg path data",
   "main": "dist/owd-path-builder.js",
   "scripts": {
