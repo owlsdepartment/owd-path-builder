@@ -14,14 +14,26 @@ import {
 import { Mode } from './types';
 
 export default class PathBuilder {
-    isClosed: boolean;
-    mode: Mode;
-    d: PathNode[];
+    protected _isClosed: boolean;
+    protected _mode: Mode;
+    protected _path: PathNode[];
 
     constructor() {
-        this.isClosed = false;
-        this.mode = MODE_RELATIVE;
-        this.d = [];
+        this._isClosed = false;
+        this._mode = MODE_RELATIVE;
+        this._path = [];
+    }
+
+    get isClosed(): boolean {
+        return this._isClosed;
+    }
+
+    get mode(): Mode {
+        return this._mode;
+    }
+
+    get path(): PathNode[] {
+        return this._path;
     }
 
     addPathNode(node: PathNode): this {
@@ -29,14 +41,14 @@ export default class PathBuilder {
             throw new Error('You cannot add node to path, that has been already closed');
         }
 
-        this.d.push(node);
+        this._path.push(node);
 
         return this;
     }
 
     close(): this {
         this.addPathNode(new CloseNode());
-        this.isClosed = true;
+        this._isClosed = true;
 
         return this;
     }
@@ -90,19 +102,19 @@ export default class PathBuilder {
     }
 
     absolute(): this {
-        this.mode = MODE_ABSOLUTE;
+        this._mode = MODE_ABSOLUTE;
 
         return this;
     }
 
     relative(): this {
-        this.mode = MODE_RELATIVE;
+        this._mode = MODE_RELATIVE;
 
         return this;
     }
 
     toString(): string {
-        return this.d
+        return this.path
             .map((node) => node.toString())
             .join(' ')
             .trim();

@@ -2,11 +2,13 @@ import { MODE_ABSOLUTE, MODE_RELATIVE } from '@/constants';
 import { Mode } from '@/types';
 
 export default class PathNode {
-    key = '';
-    mode: Mode;
+    readonly key: string = '';
+    readonly mode: Mode;
 
-    constructor(mode: Mode = MODE_ABSOLUTE) {
-        this.mode = mode || MODE_ABSOLUTE;
+    constructor(
+        mode: Mode = MODE_ABSOLUTE
+    ) {
+        this.mode = mode === MODE_RELATIVE ? MODE_RELATIVE : MODE_ABSOLUTE;
     }
 
     getKeyInProperCase(): string {
@@ -26,6 +28,6 @@ export default class PathNode {
     }
 
     toString(): string {
-        return `${this.getKeyInProperCase()}`;
+        return this.getKeyInProperCase();
     }
 }

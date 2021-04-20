@@ -3,15 +3,14 @@ import { Mode } from '@/types';
 import PathNode from './PathNode';
 
 export default class MoveToNode extends PathNode {
-    x: number;
-    y: number;
+    readonly key: string = 'M';
 
-    constructor(mode: Mode, x: number, y: number) {
+    constructor(
+        mode: Mode,
+        readonly x: number,
+        readonly y: number
+    ) {
         super(mode);
-
-        this.key = 'M';
-        this.x = x;
-        this.y = y;
     }
 
     toString(): string {

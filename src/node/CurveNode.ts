@@ -3,31 +3,18 @@ import { Mode } from '@/types';
 import PathNode from './PathNode';
 
 export default class CurveNode extends PathNode {
-    x1: number;
-    y1: number;
-    x2: number;
-    y2: number;
-    x3: number;
-    y3: number;
+    readonly key: string = 'C';
 
     constructor(
         mode: Mode,
-        x1: number,
-        y1: number,
-        x2: number,
-        y2: number,
-        x3: number,
-        y3: number
+        readonly x1: number,
+        readonly y1: number,
+        readonly x2: number,
+        readonly y2: number,
+        readonly x3: number,
+        readonly y3: number
     ) {
         super(mode);
-
-        this.key = 'C';
-        this.x1 = x1;
-        this.y1 = y1;
-        this.x2 = x2;
-        this.y2 = y2;
-        this.x3 = x3;
-        this.y3 = y3;
     }
 
     toString(): string {
