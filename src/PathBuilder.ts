@@ -102,6 +102,9 @@ export default class PathBuilder {
     }
 
     toString(): string {
-        return this.d.reduce((prev, node) => `${prev} ${node.toString()}`, '').trim();
+        return this.d
+            .map((node) => node.toString())
+            .join(' ')
+            .trim();
     }
 }
