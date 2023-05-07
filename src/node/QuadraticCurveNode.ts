@@ -1,6 +1,6 @@
-import { Mode } from '@/types';
-
 import PathNode from './PathNode';
+
+import { Mode } from '@/types';
 
 export default class QuadraticCurveNode extends PathNode {
     readonly key: string = 'Q';

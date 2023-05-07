@@ -1,6 +1,6 @@
-import { Mode } from '@/types';
-
 import LineNode from './LineNode';
+
+import { Mode } from '@/types';
 
 export default class VerticalLineNode extends LineNode {
     readonly key: string = 'V';

@@ -9,7 +9,7 @@ $ npm install owd-path-builder
 
 ## Usage
 ```javascript
-import PathBuilder from 'owd-path-builder';
+import { PathBuilder } from 'owd-path-builder';
 
 const pathData = new PathBuilder()
     .absolute()

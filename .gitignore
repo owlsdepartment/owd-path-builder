@@ -4,3 +4,10 @@ dist/
 npm-debug.*
 .DS_Store
 package-lock.json
+**/.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*

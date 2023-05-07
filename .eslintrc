@@ -71,10 +71,5 @@
       ],
       "@typescript-eslint/no-empty-function": "off"
   },
-  "parserOptions": {
-      "ecmaFeatures": {
-          "legacyDecorators": true
-      }
-  },
   "parser": "@typescript-eslint/parser"
 }

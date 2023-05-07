@@ -1,6 +1,6 @@
-import { Mode } from '@/types';
-
 import PathNode from './PathNode';
+
+import { Mode } from '@/types';
 
 export default class CurveNode extends PathNode {
     readonly key: string = 'C';
