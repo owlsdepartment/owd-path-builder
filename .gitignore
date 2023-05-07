@@ -1,4 +1,6 @@
 node_modules/
+coverage/
+dist/
 npm-debug.*
 .DS_Store
 package-lock.json
